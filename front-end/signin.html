@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign in</title>
+	<link rel="stylesheet" href="bmci.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-header">
+        
+        <div class="navbar-bruno navbar-bruno-fixed">
+  <!-- Logo -->
+  <a class="navbar-bruno-brand" href="bmci.html"> 
+    <img src="assets/logo.png" alt="" />
+    
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-bruno-right hidden-xs hidden-sm">
+
+   
+    <a class="navbar-bruno-item navbar-bruno-link" href="notes.html">Notes</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="about.html"> A props de nous</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="bilan.html">Bilan mensuel</a>
+    <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="declaration.html">Déclaration mensuel </a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="help.html">Aide</a>
+
+
+    <!-- Different navigation if login or not -->
+      <!-- Login text link -->
+     <a class="navbar-bruno-item navbar-bruno-link navbar-bruno-button" href="signin.html">Connexion</a>
+      <a class="navbar-bruno-item btn-brand-color font-medium navbar-bruno-button" href="signup.html">S&#39;INSCRIRE</a>
+
+
+    <!-- Button (call-to-action) -->
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+
+    <div class="dropdown text-blue-dark hidden-md hidden-lg">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars text-blue-dark"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-bruno-dropdown-menu">
+        <li>
+            <a class="navbar-bruno-item navbar-bruno-link" href="https://www.hibruno.com/users/sign_up">S&#39;inscrire</a>
+            <a class="navbar-bruno-item navbar-bruno-link" href="sign_in.html">Connexion</a>
+        </li>
+         <li>
+          <a class="navbar-bruno-item navbar-bruno-link" href="https://www.hibruno.com/how_it_works">Comment ça marche</a>
+          <a class="navbar-bruno-item navbar-bruno-link" href="https://www.hibruno.com/pricing">Tarifs</a>
+          <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="https://hibruno.zendesk.com/hc/">Aide</a>
+          <a class="navbar-bruno-item navbar-bruno-link" href="https://www.hibruno.com/about">À propos</a>
+          <a class="navbar-bruno-item navbar-bruno-link" href="http://blog.hibruno.com/">Blog</a>
+        </li>
+
+      </ul>
+    </div>
+
+</div>
+
+      </div>
+      <div class="site-wrapper-content">
+        <div class="padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <h2>Connexion</h2>
+
+        <form novalidate="novalidate" class="simple_form new_user" id="new_user" action="https://www.hibruno.com/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9lD3zQl/0+giAiP6wEWDpKido420ivW+5d2kcmNlH9U7NDMQsbFG8R+HDB1EFdNvvql31C7KBmvA2MolY/iG4w==" />
+          <div class="form-inputs">
+            <div class="form-group email optional user_email"><label class="control-label email optional" for="user_email">Email</label><input class="form-control string email optional" autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" /></div>
+            <div class="form-group password optional user_password"><label class="control-label password optional" for="user_password">Mot de passe</label><input class="form-control password optional" type="password" name="user[password]" id="user_password" /></div>
+            <div class="form-group boolean optional user_remember_me"><div class="checkbox"><input value="0" type="hidden" name="user[remember_me]" /><label class="boolean optional" for="user_remember_me"><input class="boolean optional" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />Se souvenir de moi</label></div></div>
+          </div>
+
+          <div class="form-actions">
+            <input type="submit" name="commit" value="Connexion" class="btn btn btn-primary pull-right" data-disable-with="Connexion" />
+          </div>
+</form>
+        
+  <a href="https://www.hibruno.com/users/sign_up">Inscription</a><br />
+
+  <a href="https://www.hibruno.com/users/password/new">Mot de passe oublié ?</a><br />
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="site-wrapper-footer">
+      <div class="site-wrapper-footer">
+        <div class="footer">
+
+  <div class="container">
+    <div class="row padding-lg-tb">
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Produit</div>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Entreprise</div>
+           <a href="">lorem</a>
+            <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Aide</div>
+          <a target="_blank" href="mailto:contact@hibruno.com">Nous contacter</a>
+          <a target="_blank" href="https://hibruno.zendesk.com/hc/">FAQ</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Légal</div>
+           <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+    </div>
+  </div>
+  <div class="bg-blue-dark padding-md-tb">
+    <div class="text-center">
+      <a class="link-icon" href="https://facebook.com/brunofintech" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="link-icon" href="https://twitter.com/brunofintech" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="link-icon" href="https://m.me/brunofintech">
+        <i class="fas fa-comment" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="text-md text-center">Made by ɳêar ♥️ </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+      <script src="assets/main.js"></script>
+    <script src="../packs/application-8d327f1f67ea882a7907.js"></script>
+
+    
+  </body>
+
+</html>

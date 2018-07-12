@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Confim</title>
+	 <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" media="all" href="bmci.css" />
+    <!-- google roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon-32x32-2deb6d6dbce0dc311de4be4fa779819327f9e97c18c5d4024274b173979c93d9.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+ <div class="site-wrapper">
+      <div class="site-wrapper-header">
+       <!--    <div class="alert alert-navbar alert-warning alert-dismissible alert-fixed alert-top" role="alert">
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           Vous êtes déjà connecté(e).
+         </div> -->
+
+        <div class="navbar-bruno navbar-bruno-fixed">
+  <!-- Logo -->
+<a class="navbar-bruno-brand" href="bmci.html"> 
+    <img src="assets/logo.png" alt="" />
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-bruno-right hidden-xs hidden-sm">
+
+ 
+    <a class="navbar-bruno-item navbar-bruno-link" href="notes.html">Notes</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="about.html"> A props de nous</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="bilan.html">Bilan mensuel</a>
+    <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="declaration.html">Déclaration mensuel </a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="help.html">Aide</a>
+    <!-- Different navigation if login or not -->
+
+      <!-- Profile picture and dropdown -->
+      <div class="navbar-bruno-item">
+        <div class="dropdown">
+          <div class="avatar-circle-sm dropdown-toggle" id="navbar-bruno-menu" data-toggle="dropdown">
+            <span class="initials">AE</span>
+          </div>
+          <ul class="dropdown-menu dropdown-menu-right navbar-bruno-dropdown-menu">
+
+            <li>
+              <a href="/users/4958/profile">
+                <i class="fa fa-user"></i>  Mon profil
+</a>            </li>
+            <li>
+              <a rel="nofollow" data-method="delete" href="/users/sign_out">
+                <i class="fa fa-sign-out"></i>  Déconnexion
+</a>            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    <!-- Button (call-to-action) -->
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+
+    <div class="dropdown text-blue-dark hidden-md hidden-lg">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars text-blue-dark"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-bruno-dropdown-menu">
+        <li>
+            <a href="/users/4958/profile">
+              <i class="fa fa-user"></i>  Mon profil
+</a>            <a rel="nofollow" data-method="delete" href="/users/sign_out">
+              <i class="fa fa-sign-out"></i>  Déconnexion
+</a>        </li>
+         <li>
+        <a class="navbar-bruno-item navbar-bruno-link" href="notes.html">Notes</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="about.html"> A props de nous</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="bilan.html">Bilan mensuel</a>
+    <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="declaration.html">Déclaration mensuel </a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="help.html">Aide</a>
+        </li>
+
+      </ul>
+    </div>
+
+</div>
+
+      </div>
+      <div class="site-wrapper-content">
+        
+
+<div class="padded">
+    <div class="container margin-bt-lg">
+      <ol class="list-unstyled text-center step-indicator step-indicator-horizontal">
+        <li class="success" style="">
+        	<!-- timeline -->
+          <div class="step">
+            <img width="20" src="" alt="" />
+          </div>
+          <div class="caption hidden-xs hidden-sm">
+            Compte Bruno
+          </div>
+        </li>
+
+        <li class="active info">
+          <div class="step">2</div>
+          <div class="caption">
+            Messenger
+          </div>
+        </li>
+        <li class="">
+          <div class="step">3</div>
+          <div class="caption hidden-xs hidden-sm">
+            Banque
+          </div>
+        </li>
+        <li class="">
+          <div class="step">4</div>
+          <div class="caption hidden-xs hidden-sm">
+            Compte courant
+          </div>
+        </li>
+      </ol>
+    </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+
+        <div class="onboarding__help">
+          <div>
+            <!-- <p class="text-gray text-bold"><s>1. Créé ton compte</s></p> -->
+            <p class="text-gray text-bold">Rayan, un contact dans Messenger</p>
+            <p>Rayan utilise uniquement Messenger pour communiquer avec toi. Facebook n'a pas accès à tes comptes bancaires, ni même à tes données bancaires.</p>
+            <p><a href="https://hibruno.zendesk.com/hc/fr-fr/articles/115003043351-Facebook-a-t-il-acc%C3%A8s-%C3%A0-mes-comptes-">En savoir plus</a></p>
+          </div>
+          <div class="text-center">
+            <img class="onboarding__help__bear hidden-xs hidden-sm" src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-9 text-center">
+
+        <h2 class="text-blue-dark">Confirme ton identité</h2>
+
+        <div class="subanner">
+          Clique sur <em>Envoyer vers Messenger</em> pour recevoir un code de confirmation puis entre-le ci-dessous.
+        </div>
+
+        <div class="padded-sm">
+          <div class="messenger_load_button">
+            <img src="assets/loader.gif" id="load-description"/>
+          </div>
+          <div class="messenger_timeout hidden text-red">
+            <p>L'affichage du bouton <em>Envoyer vers Messenger</em> prend plus de temps que prévu.</p>
+            <p>Si il ne s'affiche pas d'ici quelques secondes <a target="_blank" href="https://hibruno.zendesk.com/hc/fr-fr/articles/360000746692">consulte notre centre d&#39;aide</a>.</p>
+          </div>
+          <div class="fb-send-to-messenger"
+               messenger_app_id="1767629586823035"
+               page_id="255659421495438"
+               data-ref="E4tY2sj1BZRY2ppge92XTB5h"
+               color="blue"
+               size="xlarge">
+          </div>
+
+        </div>
+
+        <div class="padded-sm">
+          <p>Code de confirmation</p>
+          <form class="form-inline" action="/users/4958/onboarding/confirmation_code" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iHlmMi4phcBxKFMFzEqhyP2O6RMrXpAjXMy1Dh2Y/kjwgo/hzredxrrOzAEY9D7w6R3KgskB1ZZanuSkaM/DIQ==" />
+            <input type="text" name="code" id="code" placeholder="1234" class="form-control text-center" />
+            <input type="submit" name="commit" value="Valider" class="btn btn-bruno btn-brand-color margin-sm-tb" data-disable-with="Valider" />
+</form>
+          <p class="text-sm">Si tu ne reçois pas ton code, clique
+            <a target="_blank" href="https://m.me/brunofintech?ref=p_optin_E4tY2sj1BZRY2ppge92XTB5h">ici</a>.
+          </p>
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+      </div>
+      <div class="site-wrapper-footer">
+          <div class="footer">
+
+  <div class="container">
+    <div class="row padding-lg-tb">
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Produit</div>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Entreprise</div>
+           <a href="">lorem</a>
+            <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Aide</div>
+          <a target="_blank" href="mailto:contact@hibruno.com">Nous contacter</a>
+          <a target="_blank" href="https://hibruno.zendesk.com/hc/">FAQ</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Légal</div>
+           <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+    </div>
+  </div>
+  <div class="bg-blue-dark padding-md-tb">
+    <div class="text-center">
+      <a class="link-icon" href="https://facebook.com/brunofintech" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="link-icon" href="https://twitter.com/brunofintech" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="link-icon" href="https://m.me/brunofintech">
+        <i class="fas fa-comment" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="text-md text-center">Made by ɳêar ♥️ </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+   <script src="assets/main.js"></script>
+    <script src="/packs/application-8d327f1f67ea882a7907.js"></script>
+
+    
+<script>
+  // Facebook SDK javascript (Sent To Messenger Plugin)
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '1767629586823035',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v2.12'
+    });
+
+    FB.Event.subscribe('send_to_messenger', function (e) {
+      // callback for events triggered by the plugin
+      if (e.event === 'rendered') {
+        clearTimeout(messenger_timer);
+        $('.messenger_timeout').addClass('hidden');
+        $('.messenger_load_button').addClass('hidden');
+      }
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/fr_FR/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Use to display error when failed to load messenger plugin
+  messenger_timer = setTimeout(function() {
+    $('.messenger_load_button').addClass('hidden');
+    $('.messenger_timeout').removeClass('hidden');
+  }, 5000);
+
+
+  mixpanel.alias("4958");
+  mixpanel.track("Messenger Step");
+  mixpanel.people.set({
+    "Status": "Messenger",
+    "Email" : "desunear@gmail.com",
+  });
+  mixpanel.identify("4958")
+
+  amplitude.getInstance().logEvent('Messenger Step');
+
+  // track lead for FB
+  fbq('track', 'Messenger Step');
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BMCI WEB APP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="bmci.css">
+<link rel=" shortcut icon" type="image/png" href ="assets/fav.png" />
+</head>
+<body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-header">
+        
+        <div class="navbar-bruno navbar-bruno-fixed">
+  <!-- Logo -->
+  <a class="navbar-bruno-brand" href="bmci.html"> 
+    <img src="assets/logo.png" alt="" />
+</a>
+  <!-- Right Navigation -->
+  <div class="navbar-bruno-right hidden-xs hidden-sm">
+
+    <a class="navbar-bruno-item navbar-bruno-link" href="notes.html">Notes</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="about.html"> A props de nous</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="bilan.html">Bilan mensuel</a>
+    <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="declaration.html">Déclaration mensuel </a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="help.html">Aide</a>
+
+
+    <!-- Different navigation if login or not -->
+      <!-- Login text link -->
+      <a class="navbar-bruno-item navbar-bruno-link navbar-bruno-button" href="signin.html">Connexion</a>
+      <a class="navbar-bruno-item btn-brand-color font-medium navbar-bruno-button" href="signup.html">S&#39;INSCRIRE</a>
+
+
+    <!-- Button (call-to-action) -->
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+
+    <div class="dropdown text-blue-dark hidden-md hidden-lg">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars text-blue-dark"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-bruno-dropdown-menu">
+        <li>
+            <a class="navbar-bruno-item navbar-bruno-link" href="signup.html">S&#39;inscrire</a>
+            <a class="navbar-bruno-item navbar-bruno-link" href="signin.html">Connexion</a>
+        </li>
+         <li>
+      <a class="navbar-bruno-item navbar-bruno-link" href="notes.html">Notes</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="about.html"> A props de nous</a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="bilan.html">Bilan mensuel</a>
+    <a class="navbar-bruno-item navbar-bruno-link" target="_blank" href="declaration.html">Déclaration mensuel </a>
+    <a class="navbar-bruno-item navbar-bruno-link" href="help.html">Aide</a>
+        </li>
+
+      </ul>
+    </div>
+
+</div>
+
+      </div>
+      <div class="site-wrapper-content">
+        <div class="language-choice" id="language-choice">
+  <a class="navbar-icon margin-xxs-lr" href="/fr">
+    <img alt="fr" width="16px" src="assets/flag-fr-d38217f1babf93301f63af752711fc650207282d7d12824c3a00b96c14a0bd84.png" />
+</a> <span class="bold">|</span>
+  <a class="navbar-icon margin-xxs-lr" href="/en">
+    <img alt="en" width="16px" src="assets/flag-en-63e1fa52d41f3402dfe12be124b220bf8bea97214708a1555e97077f14df9416.png" />
+</a>
+</div>
+
+
+
+</div>
+<div class="bg-lightgrey">
+  <div class="banner-home" >
+    <div class="banner-home-left">
+      <h1>Plus du'un conseiller bancaire de poche! un coach de vie !</h1>
+      <p class="font-medium margin-xxl-tb">
+        Rayan est un assistant  personnel conécté à la banque qui aide le client à étre plus conscient de des dépenses, une Plateform Web visiblité Analyse budget, depenses clients.
+
+      </p>
+      <a href="/users/sign_up" target="_blank" class="btn-block btn-messenger btn-brand-color text-responsive font-medium margin-md-tb mw-400 block">
+        Ouvrir un compte Rayan
+      </a>
+    </div>
+      <div class="banner-home-right hidden-xs">
+        <div class="phone-wrapper">
+          <video class="banner-video" src="assets/demo.mp4" autoplay loop muted playsinline>
+          </video>
+          <img src="assets/deviceframe.png" alt="Lp banner video" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding-xxl-tb bg-white text-blue-darker press-border">
+  <h2>La presse parle de nous</h2>
+  <div class="press">
+    <a target="_blank" href="http://www.lemonde.fr/argent/article/2018/02/24/un-robot-pour-gerer-vos-finances-personnelles_5261925_1657007.html">
+    <img width="150px" class="padding-md" src="assets/press/le_monde-fbd0bb525726b2b345b1f2b2a813f550eb569dd4803e5091cf9cc782ad9fadd2.png" alt="Le monde" />
+</a>    <a target="_blank" href="https://www.facebook.com/brunofintech/videos/506152363112808/">
+    <img width="150px" class="padding-md" src="assets/press/bfmbusiness-630e406303a0e2d7309511c5f05a88e96a4fe8fac55d9700e9c40405fa9350f9.png" alt="Bfmbusiness" />
+</a>    <a target="_blank" href="https://www.maddyness.com/finance/2018/02/05/fintech-chatbot-bruno-leve-1-million-euros/">
+    <img width="150px" class="padding-md" src="assets/press/maddyness-282dc7d73de8b12bdf7ce955c28165cbc9461982f5d0cac0b5e1d87da2cf8ff0.png" alt="Maddyness" />
+</a>    <a target="_blank" href="https://www.lesechos.fr/journal20180220/lec2_startup/0301318491449-la-fintech-bruno-veut-aider-les-millennials-a-epargner-2155053.php">
+    <img width="150px" class="padding-md" src="assets/press/les_echos-06534f3be7a3c71a5857254ededa578100ed7f5043a0bfaa5ef3928a193efa40.png" alt="Les echos" />
+</a>    <a target="_blank" href="http://www.elle.fr/Societe/Le-travail/Reussir-au-boulot/L-interview-digital-girl-de-Caroline-Matte-celle-qui-aide-les-start-up-chez-Facebook-3576278">
+    <img width="150px" class="padding-md" src="assets/press/elle-7ff7e757daab3cb067254073798e8a6187ab04747a51bddc7ed336641249bb0b.png" alt="Elle" />
+</a>    <a target="_blank" href="https://www.forbes.fr/entrepreneurs/fintech-sur-messenger-la-start-up-bruno-aide-les-jeunes-a-epargner/">
+    <img width="150px" class="padding-md" src="assets/press/forbes-f2c939665e0b7d903b07af9ee54443fc4aaeb11ab48eefcce94e4f74773e453f.png" alt="Forbes" />
+</a>  </div>
+  <div class="quotes-container hidden-md hidden-sm hidden-xs">
+      <p class="quotes">"Une façon indolore et automatique d’épargner" <br> <span> - Le Monde </span>
+</p>
+      <p class="quotes">Une nouvelle façon de parler d'argent, simple comme Rayan : <a href="https://www.facebook.com/brunofintech/videos/506152363112808/"> voir la vidéo </a> <br> <span> - BFM Business </span>
+</p>
+      <p class="quotes">"Rayan lève 1 million d’euros pour son lancement officiel" <br> <span> - Maddyness </span>
+</p>
+      <p class="quotes">"Une vraie plateforme bancaire" <br> <span> - Les Echos </span>
+</p>
+      <p class="quotes">"Caroline pilote le programme de Facebook à la Station F et coache Rayan" <br> <span> - ELLE </span>
+</p>
+      <p class="quotes">"L'argent circule uniquement en circuit fermé. Sécurité 'by design' <br> <span> - Forbes </span>
+</p>
+  </div>
+</div>
+
+
+<div class="bg-lightgrey padding-xxl-tb text-blue-darker">
+  <h2>Nos fonctionnalités</h2>
+  <div class="padding-xxl-bottom hidden-xs hidden-sm"></div>
+  <div class="onboarding__steps padding-xs-tb hidden-md hidden-lg">
+    <div class="container">
+      <ol class="list-unstyled text-center step-indicator step-indicator-horizontal">
+        <li id="0" class="step-number active" style="">
+          <div class="step">1</div>
+        </li>
+        <li id="1" class="step-number">
+          <div class="step">2</div>
+        </li>
+        <li id="2" class="step-number">
+          <div class="step">3</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="feature-section mw-1300 margin-center reverse-row">
+    <div class="bruno-c-5 bruno-c-m-5 feature-section-content hidden-xs hidden-sm">
+      <div id="0" class="feature-content feature-content-active">
+        <div>
+          <h3>Épargnez automatiquement</h3>
+          <p>Bruno analyse régulièrement vos comptes et détermine chaque semaine le montant optimal que vous pouvez mettre de côté.
+</p>
+        </div>
+      </div>
+      <div id="1" class="feature-content">
+        <div>
+          <h3>Reprenez la main</h3>
+          <p>Déposez et retirez facilement de l&#39;argent sur votre compte Rayan pour gérer vos économies simplement.</p>
+        </div>
+      </div>
+      <div id="2" class="feature-content">
+        <div>
+          <h3>Restez au courant</h3>
+          <p>Rayan vous permet aussi de suivre votre compte courant. Il vous informe sur vos transactions et l&#39;évolution de votre solde.
+</p>
+        </div>
+      </div>
+    </div>
+    <div class="bruno-c-6 bruno-c-m-10">
+      <div class="flickity-carousel-features">
+        <div class="carousel-cell">
+          <div class="text-center hidden-md hidden-lg">
+            <h3>Épargnez automatiquement</h3>
+            <p class="margin-xl-bottom padding-sm-lr">Bruno analyse régulièrement vos comptes et détermine chaque semaine le montant optimal que vous pouvez mettre de côté.
+</p>
+          </div>
+          <div class="feature-section-image-container">
+            <img class="img-responsive" style="width: 300px;" alt="ios save chat" src="assets/fr/lp_easy-8cec86482be13e8f1fc3ae80f137e3d8be09d4f61f9918c5c048a2dca0694cc6.png" />
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="text-center hidden-md hidden-lg">
+              <h3>Reprenez la main</h3>
+              <p class="margin-xl-bottom padding-sm-lr">Déposez et retirez facilement de l&#39;argent sur votre compte Rayan pour gérer vos économies simplement.</p>
+          </div>
+          <div class="feature-section-image-container">
+            <img class="img-responsive" style="width: 300px;" alt="ios save chat" src="assets/fr/lp_responsible-8b4ffd109771db14c44b9516cb9a5d3cd3d174624ceaf200e90ffc826af65ce3.png" />
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="text-center hidden-md hidden-lg">
+              <h3>Restez au courant</h3>
+              <p class="margin-xl-bottom padding-sm-lr">Bruno vous permet aussi de suivre votre compte courant. Il vous informe sur vos transactions et l&#39;évolution de votre solde.
+</p>
+          </div>
+          <div class="feature-section-image-container">
+            <img class="img-responsive" style="width: 300px;" alt="ios save chat" src="assets/fr/lp_accounts-384be7dd07742ea9b8b6c5516da36e328a9d16b2fec02092d1eb3d25adbd2659.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="padding-xxl-bottom hidden-xs hidden-sm"></div>
+</div>
+
+<div class="bg-blue padding-xxl-tb text-white feature-section">
+  <div class="margin-center mw-1200">
+    <div class="u-flex u-flexJustifyAround u-flexAlignItemsCenter u-flexRowReverse u-flexWrap">
+        <img class="img-responsive margin-center" style="width:380px;" src="assets/security/security-screens-7c145f6610bab369a009ca1e0631ce7fef0bb95dea19aa0edad66a0c64cd0cae.png" alt="Security screens" />
+      <div class="mw-500 margin-md-lr u-flexAlignSelfStart">
+        <h2 class="text-left">La sécurité chez Rayan</h2>
+        <p class="font-medium">Nous savons que la sécurité de vos données et de votre argent est essentielle pour vous. C'est pour cette raison que chez Bruno, nous en avons fait une priorité. Qu'il s'agisse de notre code informatique, de nos serveurs de données ou du choix de nos partenaires, nous n'avons qu'une seule idée en tête : vous protéger. Pour en savoir plus, consultez notre <a class="text-white text-underline" href="https://hibruno.zendesk.com/hc/fr-fr">centre d'aide</a>.
+</p>
+      </div>
+    </div>
+
+    <div class="container-fluid margin-xxl-top mw-1000 text-center security-partners">
+      <div class="row">
+        <!-- loop  -->
+          <div class="col-xs-12 col-sm-6 col-md-3 margin-md-tb">
+            <div class="u-flex u-flexJustifyCenter u-flexAlignItemsCenter" style="height:60px;"><img class="margin-center" src="assets/security/arkea-56c5a66dd7b2a5e8f030b16a7200711b03c8bd716130b9d16571cfee1c1acf32.png" alt="Arkea" /></div>
+            <p class="padding-sm-lr text-size-md">Le Crédit Mutuel Arkea conserve et assure la sécurité des fonds déposés sur votre compte Rayan. Nous garantissons une sécurité maximum pour votre argent.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 margin-md-tb">
+            <div class="u-flex u-flexJustifyCenter u-flexAlignItemsCenter" style="height:60px;"><img class="margin-center" src="assets/security/scalingo-b0a030edfac79a1522f308bc728b3e0bda82d33c83e66dcb2dfd8ea29e2947d5.png" alt="Scalingo" /></div>
+            <p class="padding-sm-lr text-size-md">Nous gérons nos bases de données avec une technologie à la pointe de la sécurité : Scalingo. Les informations y sont cryptées et protégées de tout type d&#39;infraction.
+</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 margin-md-tb">
+            <div class="u-flex u-flexJustifyCenter u-flexAlignItemsCenter" style="height:60px;"><img class="margin-center" src="assets/security/budget_insight-6253cc509ed16edcc16a7759446f64d970dfe4c710d1a2674bf3f61888376268.png" alt="Budget insight" /></div>
+            <p class="padding-sm-lr text-size-md">La connexion avec votre banque est assurée par Budget Insight qui travaille avec plus de 240 banques en France dans un cadre sécurisé.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 margin-md-tb">
+            <div class="u-flex u-flexJustifyCenter u-flexAlignItemsCenter" style="height:60px;"><img class="margin-center" src="assets/security/messenger_support-f8dbeb79144c20418a1f5c0385b936f169836eebe6e45a70c671c233e32f74f3.png" alt="Messenger support" /></div>
+            <p class="padding-sm-lr text-size-md">L&#39;équipe Bruno est disponible directement depuis Messenger pour vous aider et répondre à vos questions. Il vous suffit de cliquer sur &#39;Parler à un humain&#39;.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white text-blue-darker padding-xxl-tb">
+  <div class="margin-center text-center mw-1200">
+    <h2>Ce qu&#39;ils pensent de Rayan</h2>
+    <div class="container-fluid">
+      <div class="row padding-xl-tb">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="card-evaluation">
+            <div class="card-top">
+              <div class="card-title">NOTE</div>
+              <div class="card-subtitle">Facebook</div>
+            </div>
+            <div class="card-note"><span class="grade">4,8</span>5</div>
+            <div class="card-ratings">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+              <br>
+              <a target="_blank" href="https://www.facebook.com/brunofintech/reviews/">Lire plus d&#39;avis</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-offset-1 col-md-7">
+          <div class="flickity-carousel-testimonies">
+            <!-- Wrapper for slides -->
+              <div class="carousel-cell">
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/cyril-5cbf345ed00b157b4d430fdba7f91c172374940963627c0f023cd9a13954fe15.jpg" alt="Cyril" />
+                        <div class="card-name">
+                         <div>Cyril</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Ce petit ours fait des ravages ! C&#39;est une très bonne idée et Rayan est très user friendly !
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/denis-58cf221c6916ad85f682a725f502491db3c6b9cabaf404876baf3413fada3479.jpg" alt="Denis" />
+                        <div class="card-name">
+                         <div>Denis</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          On se laisse porter par Bruno, il gère tout et le fait bien !
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/gilles-5d58519cd2d946400e3c2208b0e7b08b1f3c15ba6ef7e4a51114d2c1201e2167.jpg" alt="Gilles" />
+                        <div class="card-name">
+                         <div>Gilles</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Promesse tenue, simplement, efficacement. Rayan est sympa, intelligent, rapide. Rayan c&#39;est trop mon pote.
+                        </div>
+                      </div>
+                </div>
+              <div class="carousel-cell">
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/louise-ff78a1dcd589bf82c85fa30612411255913d48cb8c704023bdf2fef61e765cd7.jpg" alt="Louise" />
+                        <div class="card-name">
+                         <div>Louise</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Simple et efficace 👌 Pari réussi pour Rayan !
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/paul-6e45483efa28aaa1595e7b2e2b09d36b8ae24f5aedcbf5deee0cd1f21322c653.jpg" alt="Paul" />
+                        <div class="card-name">
+                         <div>Paul</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          La promesse est tenue, on ne se rend pas compte que son compte Rayan progresse chaque jour. Simplicité et service client au top.
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/romain-fc80dab26d2582c418db337944191dbe5c97a6467091713e01ba8ce4419dba9e.jpg" alt="Romain" />
+                        <div class="card-name">
+                         <div>Romain</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          J&#39;ai mis de côté plus d&#39;argent que ce que j&#39;imaginais ! On épargne sans s&#39;en rendre compte.
+                        </div>
+                      </div>
+                </div>
+              <div class="carousel-cell">
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/saida-45a298ec26ea0eac756c2ccd5733341112ee7f1a72b636bad41d0b6701fd3bff.jpg" alt="Saida" />
+                        <div class="card-name">
+                         <div>Saïda</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Répond à mes attentes, et mine de rien ça épargne :) facile d&#39;utilisation et information claire.
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/sebastien-168265a92eca0afdf64a980377924e1676c81d26725c573433079200f6065b95.jpg" alt="Sebastien" />
+                        <div class="card-name">
+                         <div>Sébastien</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          À l&#39;écoute de la communauté, hyper disponible.
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/jeremy-049cface1f15223b3a719b983761631800665debf476cf3645e3f83a1004e25a.jpg" alt="Jeremy" />
+                        <div class="card-name">
+                         <div>Jérémy</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Une solution innovante pour épargner sans s’en rendre compte, j’en suis ravi.
+                        </div>
+                      </div>
+                </div>
+              <div class="carousel-cell">
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/olivier-332473ce2e2142bb421e8193eb6af0cb2304ce325b418d50ef53eb7636f9bd01.jpg" alt="Olivier" />
+                        <div class="card-name">
+                         <div>Olivier</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Service sympathique et pratique! Le futur de la fintech francaise arrive.
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/paulr-2776f58ad298cae1a4aff0013c36f294c8f9dc55148b93a31eb567c8d1da11ed.jpg" alt="Paulr" />
+                        <div class="card-name">
+                         <div>Paul</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Super pratique, facile à utiliser et réalise très bien sa mission !
+                        </div>
+                      </div>
+                      <div class="card-user">
+                        <img class="avatar" src="assets/users/laura-f9ee372a6dfd62c6ae1868c1740a453554a685eecf2b9cc4bdfc7891884bf37b.jpg" alt="Laura" />
+                        <div class="card-name">
+                         <div>Laura</div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <div class=separator>|</div>
+                        <div class="card-message">
+                          Révolutionnaire ! Ça permet d&#39;épargner sans me rendre compte avec une interface user friendly !
+                        </div>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-lightgrey text-blue-darker padding-xxl-tb">
+  <div class="margin-center mw-1200">
+    <div class="container">
+      <div class="row margin-lg-tb">
+        <div class="col-xs-12 col-sm-4 col-md-4 padding-xl-bottom">
+          <h2 class="text-left">Des questions ?</h2>
+          <p>On vous répond. <br> Besoin de plus d'informations ? <br> Consultez notre <a href="https://hibruno.zendesk.com/hc/fr-fr"> centre d'aide </a>.
+</p>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-sm-offset-1 col-md-5 col-md-offset-2">
+            <div class="question">
+              <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                <h3> Combien coûte Rayan ? </h3>
+                <div class="plus-minus-toggle collapsed"></div>
+              </div>
+              <p class="answer">C’est simple. Bruno est gratuit. Nous ne facturons ni les retraits, ni les dépôts. Rien. Nada. Comment gagnons-nous notre vie ? Nous vous proposerons bientôt des placements qui vous permettront de rémunérer vos économies. Nous percevrons alors une commission sur vos intérêts.</p>
+            </div>
+            <div class="question">
+              <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                <h3> Pourquoi Rayan a besoin de vos coordonnées bancaires ? </h3>
+                <div class="plus-minus-toggle collapsed"></div>
+              </div>
+              <p class="answer">Rayan a besoin de vos coordonnées bancaires afin de pouvoir vous proposer de mettre de côté des montants adaptés à votre budget.</p>
+            </div>
+            <div class="question">
+              <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                <h3> Vos économies sont-elles rémunérées ? </h3>
+                <div class="plus-minus-toggle collapsed"></div>
+              </div>
+              <p class="answer">Le compte Rayan ne génère pas d’intérêts mais nous proposerons prochainement de nouveaux services pour rémunérer vos économies.</p>
+            </div>
+            <div class="question">
+              <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                <h3> Comment Rayan sait combien vous pouvez mettre de côté ? </h3>
+                <div class="plus-minus-toggle collapsed"></div>
+              </div>
+              <p class="answer">En observant vos transactions, Rayan est capable de reconstituer le motif de vos dépenses habituelles au cours du mois et de calculer votre budget.</p>
+            </div>
+            <div class="question">
+              <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                <h3> Quel compte connecter à Rayan ? </h3>
+                <div class="plus-minus-toggle collapsed"></div>
+              </div>
+              <p class="answer">Il est préférable de connecter votre compte le plus actif, celui avec lequel vous effectuez le plus régulièrement des transactions, afin que Rayan vous propose les montants les plus adaptés à votre budget.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padding-xxl-tb bg-white text-blue-darker">
+  <div class="container">
+    <h2>
+      Ils nous soutiennent
+    </h2>
+    <div class="press padded-sm">
+      <img width="150px" class="padded-sm" src="assets/partners/logofinanceinnovation-b89084f965ec7cb84981caea2ae7e7263a40de79319af230a31d6740e44a9cca.png" alt="Logofinanceinnovation" />
+      <img width="150px" class="padded-sm" src="assets/partners/logobpi-168bbb95f07bb0834d03780c7fb494d38ca4c43de26a012d557ca06c05fa43a8.png" alt="Logobpi" />
+      <img width="150px" class="padded-sm" src="assets/partners/logostartupgarage-e68a0abfe6a73fdad2f19e5c2400a4862e1ccaef8c2d66ea81d96f4c7dd39bff.png" alt="Logostartupgarage" />
+      <img width="150px" class="padded-sm" src="assets/partners/logostationf-fa535c71e935fc824702ab07410e4ed55a3b7cc563bbea152cdbca4e1b970c07.png" alt="Logostationf" />
+    </div>
+  </div>
+</div>
+
+<div class="padding-xxl-tb bg-lightgrey text-blue-darker text-center">
+  <h2>Venez découvrir Rayan</h2>
+    <div class="u-flexInline margin-xxl-tb">
+      <a href="signup.html" target="_blank" class="btn-messenger btn-brand-color text-responsive font-medium">
+      Ouvrir un compte Rayan
+      </a>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+      <div class="site-wrapper-footer">
+        <div class="footer">
+
+  <div class="container">
+    <div class="row padding-lg-tb">
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Produit</div>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Entreprise</div>
+           <a href="">lorem</a>
+            <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Aide</div>
+          <a target="_blank" href="mailto:contact@hibruno.com">Nous contacter</a>
+          <a target="_blank" href="https://hibruno.zendesk.com/hc/">FAQ</a>
+        </div>
+
+        <div class="col-xs-6 col-sm-3 list-footer padding-sm">
+          <div class="title">Légal</div>
+           <a href="">lorem</a>
+          <a href="">lorem</a>
+          <a href="">lorem</a>
+        </div>
+    </div>
+  </div>
+  <div class="bg-blue-dark padding-md-tb">
+    <div class="text-center">
+      <a class="link-icon" href="https://facebook.com/brunofintech" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="link-icon" href="https://twitter.com/brunofintech" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="link-icon" href="https://m.me/brunofintech">
+        <i class="fas fa-comment" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="text-md text-center">Made by ɳêar ♥️ </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+    <script src="/packs/application-8d327f1f67ea882a7907.js"></script>
+
+    <script>
+// quotes fade in fade out
+$(document).ready(function(){
+  "use-strict"
+  // Carousel for features
+  var carousel = $('.flickity-carousel-features');
+  var feature = $('.feature-content');
+  var step = $('.step-number');
+
+  carousel.flickity({
+    // options
+    autoplay: true,
+    prevNextButtons: false,
+    autoPlay: 7000,
+    wrapAround: true,
+    pageDots: false
+  });
+
+  carousel.on( 'change.flickity', function( event, index ) {
+    console.log( 'Slide changed to ' + index )
+    feature.removeClass("feature-content-active");
+    step.removeClass("active");
+    $("#"+ index +".feature-content").toggleClass("feature-content-active");
+    $('#'+ index + ".step-number").toggleClass("active");
+  });
+
+  feature.on('click', function(){
+  feature.removeClass("feature-content-active");
+  $(this).toggleClass("feature-content-active");
+  carousel.flickity('pausePlayer')
+  carousel.flickity('select', $(this).attr('id'));
+  });
+
+  step.on('click', function(){
+  step.removeClass("active");
+  $(this).toggleClass("active");
+  carousel.flickity('pausePlayer')
+  carousel.flickity('select', $(this).attr('id'));
+  });
+
+  // Carousel for testimonies
+  $('.flickity-carousel-testimonies').flickity({
+    // options
+    cellAlign: 'left',
+    autoplay: true,
+    prevNextButtons: false,
+    autoPlay: 5000,
+    wrapAround: true
+  });
+
+  // quotes fadeIn fadeOut
+  var quotes = $(".quotes");
+  var quoteIndex = -1;
+
+  function showNextQuote(){
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+    .fadeIn(1000)
+    .delay(5000)
+    .fadeOut(1000, showNextQuote);
+  }
+  showNextQuote();
+
+  // slide of answer and collapsing of + -
+  $('.question').on('click', function(){
+    $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+    $(this).find('.answer').slideToggle();
+  })
+});
+
+// track ViewContent
+fbq('track', 'Home Page');
+
+//tracking
+var search_path = document.location.search;
+if (search_path.match("p=1")) {
+    mixpanel.track("Register Success");
+} else if (search_path.match("p=0")) {
+    mixpanel.track("Register Error");
+} else {
+    mixpanel.track("Home Page");
+}
+
+amplitude.getInstance().logEvent('Home Page');
+
+
+//navbar opacity
+// $(window).on('scroll', function() {
+//     if ($(this).scrollTop() > 70) {
+//         $('#language-choice').fadeOut('slow');
+//     } else {
+//         $('#language-choice').fadeIn('slow');
+//     }
+// });
+
+</script>
+
+  </body>
+</html>
