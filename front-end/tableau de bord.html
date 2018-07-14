@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tableau de bord</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="bmci.css">
+<link rel="stylesheet" type="text/css" href="tabs.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Tableau de bord</h2>
+
+<ul class="nav nav-pills">
+<li class="active"><a data-toggle="pill" href="#home">Prévision</a></li>
+<li><a data-toggle="pill" href="#menu1">Jour</a></li>
+<li><a data-toggle="pill" href="#menu2">Semaine</a></li>
+<li><a data-toggle="pill" href="#menu3">Mois</a></li>
+</ul>
+
+<div class="tab-content">
+<div id="home" class="tab-pane fade in active">
+<!-- <h3>Prévision</h3> -->
+<div class="smtng">
+
+
+<h2 class="text-blue-dark text-center">Revenue</h2>
+<form novalidate="novalidate" class="simple_form new_user" id="new_user" action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="" value="">
+<input type="hidden" name="user[invitation_token]" id="user_invitation_token">
+<div class="row">
+<div class="col-xs-6">
+<div class="form-group string required user_first_name margin-md-top"><label class="control-label string required" for="user_first_name">Salaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+</div>
+<div class="col-xs-6">
+<div class="form-group string required user_last_name margin-md-top"><label class="control-label string required" for="user_last_name">Revenue Supplimentaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[last_name]" id="user_last_name"></div>
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Générales</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+  
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"><i class="fas fa-home fa-2x"></i> Habitation</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"><i class="fas fa-file-invoice-dollar fa-2x "></i> Factures</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode"><i class="fas fa-shopping-cart fa-2x"></i> Epicerie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"><i class="fas fa-taxi fa-2x"></i> Transport</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode"><i class="fas fa-briefcase-medical fa-2x"></i> Santé</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Dévertisement</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"><i class="fas fa-plane fa-2x"></i> Vacance</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode"><i class="fas fa-coffee fa-2x"></i>
+
+Sortie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"><i class="fas fa-tshirt fa-2x"></i>  Mode et beauté</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Cultures</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"> <i class="fas fa-user-graduate fa-2x"></i>
+
+Formation/Etude</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode"> <i class="fas fa-file-alt fa-2x"></i> Documentation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Extra</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"> <i class="fas fa-gift fa-2x"></i> Cadeaux</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode"> <i class="fas fa-wrench fa-2x"></i> Réparation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city"> <i class="far fa-hospital fa-2x"></i> Urgence</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<input type="submit" name="commit" value="Valider" class="btn btn-block btn-bruno btn-brand-color margin-md-tb bold noOutline" data-disable-with="Valider">
+</form>
+</div>
+</div>
+<div id="menu1" class="tab-pane fade">
+<!-- <h3>Prévision</h3> -->
+
+<div class="">
+<h2 class="text-blue-dark text-center">Jour</h2>
+
+<div class="padded-sm" id="center">
+
+<form class="form-inline" action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="date" name="" id="" placeholder="" class="form-control text-center" />
+
+</form>
+        
+  </div>
+
+<form novalidate="novalidate" class="simple_form new_user" id="new_user" action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="" value="">
+<input type="hidden" name="user[invitation_token]" id="user_invitation_token">
+<div class="row">
+<!-- <div class="col-xs-6">
+<div class="form-group string required user_first_name margin-md-top"><label class="control-label string required" for="user_first_name">Salaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+</div> -->
+<!-- <div class="col-xs-6">
+<div class="form-group string required user_last_name margin-md-top"><label class="control-label string required" for="user_last_name">Revenue Supplimentaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[last_name]" id="user_last_name"></div>
+</div> -->
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Générales</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Habitation</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Factures</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Epicerie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Transport</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Santé</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Dévertisement</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Vacance</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Sortie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Mode et beauté</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Cultures</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Formation/Etude</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Documentation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Extra</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Cadeaux</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Réparation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Urgence</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<input type="submit" name="commit" value="Valider" class="btn btn-block btn-bruno btn-brand-color margin-md-tb bold noOutline" data-disable-with="Valider">
+</form>
+</div>
+</div>
+<div id="menu2" class="tab-pane fade">
+<!-- <h3>Prévision</h3> -->
+<div class="">
+
+
+<h2 class="text-blue-dark text-center">Semaine</h2>
+<img src="https://codepen.io/setholito/pen/BWOmwP/image/large.png" alt="" id="img">
+<form novalidate="novalidate" class="simple_form new_user" id="new_user" action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="" value="">
+<input type="hidden" name="user[invitation_token]" id="user_invitation_token">
+<div class="row">
+<!-- <div class="col-xs-6">
+<div class="form-group string required user_first_name margin-md-top"><label class="control-label string required" for="user_first_name">Salaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+</div> -->
+<!-- <div class="col-xs-6">
+<div class="form-group string required user_last_name margin-md-top"><label class="control-label string required" for="user_last_name">Revenue Supplimentaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[last_name]" id="user_last_name"></div>
+</div> -->
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Générales</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Habitation</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Factures</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Epicerie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Transport</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Santé</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Dévertisement</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Vacance</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Sortie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Mode et beauté</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Cultures</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Formation/Etude</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Documentation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Extra</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Cadeaux</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Réparation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Urgence</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<input type="submit" name="commit" value="Valider" class="btn btn-block btn-bruno btn-brand-color margin-md-tb bold noOutline" data-disable-with="Valider">
+</form>
+</div>
+</div>
+<div id="menu3" class="tab-pane fade">
+<!-- <h3>Prévision</h3> -->
+<div class="">
+
+<h2 class="text-blue-dark text-center">Month</h2>
+<img src="https://codepen.io/setholito/pen/BWOmwP/image/large.png" alt="" id="img">
+<form novalidate="novalidate" class="simple_form new_user" id="new_user" action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="" value="">
+<input type="hidden" name="user[invitation_token]" id="user_invitation_token">
+<div class="row">
+<!-- <div class="col-xs-6">
+<div class="form-group string required user_first_name margin-md-top"><label class="control-label string required" for="user_first_name">Salaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+</div>
+<div class="col-xs-6">
+<div class="form-group string required user_last_name margin-md-top"><label class="control-label string required" for="user_last_name">Revenue Supplimentaire</label><input class="form-control string required" placeholder="" type="text" value="" name="user[last_name]" id="user_last_name"></div>
+</div>
+<div class="col-xs-12"> -->
+<h2 class="text-blue-dark text-center">Générales</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Habitation</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Factures</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Epicerie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Transport</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Santé</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Dévertisement</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Vacance</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Sortie</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Mode et beauté</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Cultures</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Formation/Etude</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Documentation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12">
+<h2 class="text-blue-dark text-center">Extra</h2>
+<br>
+<div class="margin-bt-md select-date-wrapper">
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Cadeaux</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_zipcode"><label class="control-label string required" for="user_zipcode">Réparation</label><input class="form-control string required" placeholder="" type="text" name="user[zipcode]" id="user_zipcode"></div>
+</div>
+<div class="col-xs-12 col-md-6">
+<div class="form-group string required user_city"><label class="control-label string required" for="user_city">Urgence</label><input class="form-control string required" placeholder="" type="text" name="user[city]" id="user_city"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<input type="submit" name="commit" value="Valider" class="btn btn-block btn-bruno btn-brand-color margin-md-tb bold noOutline" data-disable-with="Valider">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
