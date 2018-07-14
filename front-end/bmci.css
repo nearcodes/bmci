@@ -4959,7 +4959,7 @@ tbody.collapse.in {
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus {
     color: #fff;
-    background-color: #78d1d9
+   background:  linear-gradient(to right, #43e97b 0%, #38f9d7 100%)
 }
 
 .nav-stacked>li {
@@ -15861,3 +15861,19 @@ a:hover {
 
 
      }
+div#center {
+    text-align: center;
+}
+.fas ,.far {
+  /* border-radius: 50%;
+  padding: 10px 10px; */
+  background: -webkit-linear-gradient(#43e97b, #38f9d7 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  } 
+  #img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
